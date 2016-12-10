@@ -1,27 +1,98 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Kailinil.GitHub.io by Kailinil</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Kailinil.GitHub.io</h1>
-      <h2 class="project-tagline">a gitpage</h2>
-    </section>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.clock{
+			width: 200px;
+			height: 200px;
+			border: 2px solid black;
+			border-radius: 50%;
+			margin: 40px auto;
+			position: relative;
+		}
 
-    <section class="main-content">
-      <p>aaa</p>
+		.clock > div{
+			position: absolute;
+			transform-origin: bottom center;
+			border-top-left-radius: 100px;
+			border-top-right-radius: 100px;
+		}
 
-      <p> this is my first page test</p>
+		.hour{
+			width: 6px;
+			height: 50px;
+			background-color: #029df9;
+			left: 97px;
+			top: 50px;
+		}
 
-    </section>
+		.minute{
+			width: 4px;
+			height: 60px;
+			background-color: #382a9d;
+			left: 98px;
+			top: 40px;
+		}
 
-  
-  </body>
+		.second{
+			width: 2px;
+			height: 70px;
+			background-color: pink;
+			left: 99px;
+			top: 30px;
+		}
+
+		.cap{
+			width: 10px;
+			height: 10px;
+			left: 95px;
+			top: 95px;
+			border-radius: 50%;
+			background: silver;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	 <div class="clock">
+	 	<div class="hour"></div>
+	 	<div class="minute"></div>
+	 	<div class="second"></div>
+	 	<section class="cap"></section>
+	 </div>
+	 <script>
+	 	var oHour = document.querySelector('.hour');
+	 	var oMinute = document.querySelector('.minute');
+	 	var oSecond = document.querySelector('.second');
+
+	 	setInterval(clock,16)
+
+	 	function clock(){
+	 		var date = new Date();
+
+	 		var hour = date.getHours()%12;
+	 		var minute = date.getMinutes();
+	 		var second = date.getSeconds();
+	 		var millinsecond = date.getMilliseconds();
+
+	 		oHour.style.transform = `rotate(${(hour+minute/60)/12*360}deg)`;
+	 		oMinute.style.transform = `rotate(${(minute+second/60)/60*360}deg)`;
+	 		oSecond.style.transform = `rotate(${(second+millinsecond/1000)/60*360}deg)`;
+	 	}
+
+	 	clock();
+	 </script>
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
