@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>陈强义</title>
+<link rel="stylesheet" type="text/css" href="css/myworks.css"/>
+<link href="favicon.ico" rel="icon" type="image/x-icon" />
+<script src="js/common.js"></script>
+<script src="js/move.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/myworks.js"></script>
+</head>
+<body>
+	<header>
+		<ul id="clock">
+			<li><img src="images/num.png"/></li>
+			<li><img src="images/num.png"/></li>
+			<li class="dotdot"></li>
+			<li><img src="images/num.png"/></li>
+			<li><img src="images/num.png"/></li>
+			<li class="dotdot"></li>
+			<li><img src="images/num.png"/></li>
+			<li><img src="images/num.png"/></li>
+		</ul>
+		<div class="nav"></div>
+		<div class="point">javascript</div>
+		<div class="hd-bot"></div>
+	</header>
+	<!--content-->
+	<div class="content">
+		<div class="rotLeft rotTop pageBack"></div>
+		<div class="rotRight rotTop pageBack"></div>
+		<div class="container page cn">
+			<!--introduce nav-->
+			<section class="main-tit">
+				<h2 class="subtitle">原生javascript应用</h2>
+				<h2 class="subtitle">
+					<a href="index.html">首页</a>
+				</h2>
+				<h2 class="subtitle">
+					<a href="credit.html">联系我</a>
+				</h2>
+				<h2 class="subtitle">
+					<a href="websites/360kan/index.html">CSS & HTML作品页</a>
+				</h2>
+				<h2 class="subtitle">
+					<a href="myworks-h5.html">CSS3 & HTML5作品页</a>
+				</h2>
+				<h2 class="subtitle">
+					<a href="myworks-h5.html#app">手机端静态页</a>
+				</h2>
+				<div class="scissors"></div>
+				<div class="pageTitle">Mac Dock</div>
+				<blockquote>
+					<p>模拟Mac底部Dock栏图标的感应效果，通过对鼠标和图标中心的测距来完成感应测试。</p>
+				</blockquote>
+			</section>
+			<!--mac-->
+			<section id="dock">
+				<div id="dock-box">
+					<img src="images/dock/1.png" width="64" />
+					<img src="images/dock/2.png" width="64" />
+					<img src="images/dock/3.png" width="64" />
+					<img src="images/dock/4.png" width="64" />
+					<img src="images/dock/5.png" width="64" />
+				</div>
+			</section>
+			<section class="main-tit">
+				<div class="scissors"></div>
+				<div class="pageTitle">Mac Dock</div>
+				<blockquote>
+					<p>无缝滚动是PC大型网站首页经常要用到的一种效果，遇到过好多同行，喜欢用jQuery插件来实现，不但页面加载速度变慢，而且效果不完美，次无缝滚动也是由纯js原生手写，比较完美（因此页所列项目过多，故没加定时器轮播）。</p>
+				</blockquote>
+			</section>
+			<!--无缝滚动-->
+			<section id="scroll">
+				<ul>
+					<li><img src="images/scroll/z1.jpg"/></li>
+					<li><img src="images/scroll/z2.jpg"/></li>
+					<li><img src="images/scroll/z3.jpg"/></li>
+					<li><img src="images/scroll/z4.jpg"/></li>
+					<li><img src="images/scroll/z5.jpg"/></li>
+				</ul>
+				<ol>
+					<li class="on">0</li>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+				</ol>
+				<a href="javascript:;" class="prev"><</a>
+				<a href="javascript:;" class="next">></a>
+			</section>
+			
+			<!--照片墙-->
+			<section class="main-tit">
+				<div class="scissors"></div>
+				<div class="pageTitle">照片墙</div>
+				<blockquote><p>此效果主要运用定位转换，把页面内块的位置获取并给予每个块自己的绝对定位距离，在进行碰撞检测和随机换位操作。</p></blockquote>
+			</section>
+			<section id="picwall">
+				<button class="c-button" type="button">
+				  <div class="c-ripple js-ripple">
+				    <span class="c-ripple__circle"></span>
+				  </div>
+				  change
+				</button>
+				<ul>
+					<li><img src="images/cat/1.jpg" /></li>
+					<li><img src="images/cat/2.jpg" /></li>
+					<li><img src="images/cat/3.jpg" /></li>
+					<li><img src="images/cat/4.jpg" /></li>
+					<li><img src="images/cat/5.jpg" /></li>
+					<li><img src="images/cat/6.jpg" /></li>
+					<li><img src="images/cat/7.jpg" /></li>
+					<li><img src="images/cat/8.jpg" /></li>
+					<li><img src="images/cat/9.jpg" /></li>
+				</ul>
+			</section>
+			
+			<!--分块运动-->
+			<section class="main-tit">
+				<div class="scissors"></div>
+				<div class="pageTitle">分块运动</div>
+				<blockquote><p>点击时候，穿件N行M列个span，来承载当前background，然后运用定时器对不同位置的span赋予不同运动时间，达到切换的视觉效果。</p></blockquote>
+			</section>
+			<section class="splitblock">
+				<button class="c-button" type="button" id="btn1">
+				  <div class="c-ripple js-ripple">
+				    <span class="c-ripple__circle"></span>
+				  </div>
+				  切换
+				</button>
+				<div class="box">
+				</div>
+			</section>
+			
+			
+			<!--模仿iphone-->
+			<section class="main-tit">
+				<div class="scissors"></div>
+				<div class="pageTitle">模拟iphone翻页</div>
+				<blockquote><p>模拟iphone的翻页效果，通过判断各个图片的轴心点，来决定当前页面是否翻页。</p></blockquote>
+			</section>
+			<section id="iphone">
+				<div id="wrap">
+					<ul>
+						<li style="background:url(images/iphone/pic1.jpg) no-repeat;" title=""></li>
+						<li style="background:url(images/iphone/pic2.jpg) no-repeat;" title=""></li>
+						<li style="background:url(images/iphone/pic3.jpg) no-repeat;" title=""></li>
+						<li style="background:url(images/iphone/pic4.jpg) no-repeat;" title=""></li>
+					</ul>
+				</div>
+			</section>
+			
+			
+			<!-- show-bar -->
+			<section class="main-tit">
+				<div class="scissors"></div>
+				<div class="pageTitle">左右拖动切换</div>
+				<blockquote><p>模拟网易云音乐的滑动效果。</p></blockquote>
+			</section>
+			<section id="showbar">
+				<ul>
+			    	<li><img src="images/showbar/1.jpg" /></li>
+			    	<li><img src="images/showbar/2.jpg" /></li>
+			    	<li><img src="images/showbar/3.jpg" /></li>
+			    	<li><img src="images/showbar/4.jpg" /></li>
+			    	<li><img src="images/showbar/5.jpg" /></li>
+			    	<li><img src="images/showbar/6.jpg" /></li>
+			    	<li><img src="images/showbar/7.jpg" /></li>
+			    	<li><img src="images/showbar/8.jpg" /></li>
+			    </ul>   
+			</section>
+			
+			
+			<!-- 视差效果 -->
+			<section class="main-tit">
+				<div class="scissors"></div>
+				<div class="pageTitle">模拟视差效果</div>
+				<blockquote><p>模拟3D视差效果</p></blockquote>
+			</section>
+			<section id="eye">
+				<ul id="ul_container">
+					<li id="pic1" style="z-index: 3;"><img src="images/eye/1.jpg" /></li>
+					<li id="pic2" style="z-index: 4;"><img src="images/eye/2.jpg" /></li>
+					<li id="pic3" style="z-index: 5;"><img src="images/eye/3.jpg" /></li>
+					<li id="pic4" style="z-index: 4;"><img src="images/eye/4.jpg" /></li>
+					<li id="pic6" style="z-index: 3;"><img src="images/eye/5.jpg" /></li>
+					<li id="pic7" style="z-index: 2;"><img src="images/eye/6.jpg" /></li>
+					<li id="pic8" style="z-index: 5;"><img src="images/eye/7.jpg" /></li>
+					<li id="pic5" style="z-index: 1;"></li>
+			</section>
+			
+			<!--ajax-->
+			<section class="main-tit">
+				<div class="scissors"></div>
+				<h2 class="subtitle">关于Ajax交互和Jsonp跨域交互</h2>
+				<div class="scissors"></div>
+				<div class="pageTitle">Ajax</div>
+				<blockquote><p>由于本人刚学的php没多久，这里本人就利用自己的服务器以及数据库通过原生js封装的ajax完成一个用户注册登陆的功能</p></blockquote>
+				<button class="c-button" type="button" id="loginBtn">
+				  <div class="c-ripple js-ripple loginDiv">
+				    <span class="c-ripple__circle"></span>
+				  </div>
+				  注册/登陆
+				</button>
+				<div id="login">
+					<div class="logTitle">
+						<a href="javascript:;">x</a>
+						<div class="log-info">欢迎登陆ChenBlog账号</div>
+					</div>
+					
+					<input type="text" id="user" placeholder="手机/邮箱/用户名" />
+					<input type="password" id="pass" placeholder="密码" />
+					
+					<span id="error"></span>
+					<button class="c-button" type="button" id="signUp">
+					  <div class="c-ripple js-ripple">
+					    <span class="c-ripple__circle"></span>
+					  </div>
+					  登陆
+					</button>
+					<button class="c-button" type="button" id="signIn">
+					  <div class="c-ripple js-ripple">
+					    <span class="c-ripple__circle"></span>
+					  </div>
+					  注册
+					</button>
+				</div>
+				<div class="pageTitle">jsonp</div>
+				<blockquote><p>通过原生js封装的jsonp制作了一些<a href="http://www.chenqiangyi.com/myworks/phoneQuery.html" target="_search">生活上的小工具</a></p></blockquote>
+				
+			</section>
+			
+		</div>
+	
+		<div class="rotLeft rotBottom pageBack"></div>
+		<div class="rotRight rotBottom pageBack"></div>
+	</div>
+	<div id="footer-nav">
+        | <a href="#" class="toptop">Top</a> | 
+        <a href="credit.html">About Me</a> |
+        <a href="mailto:chenqy1215@gmail.com" target="_blank">Email</a> |
+        <a href="myworks-js.html">JS</a> |
+        <a href="myworks-css.html">CSS & HTML</a> | 
+        <a href="myworks-h5.html">CSS3 & HTML5</a> |
+    </div>
+    <div id="footer-follow">
+        <a class="footer-follow-element footer-follow-google" href="https://plus.google.com/u/0/" target="_blank" title="Follow me on Google Plus"></a>
+        <a class="footer-follow-element footer-follow-github" href="https://github.com/wangruwei" target="_blank" title="Follow me on GitHub"></a>
+        <a class="footer-follow-element footer-follow-weibo" href="http://weibo.com/2730287783/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" target="_blank" title="Follow me on Sina Weibo"></a>
+    </div>
+	<footer>
+		<div id="footerImg"></div>
+	</footer>
+	<div id="scrollTop" >
+		<span class="level2"></span>
+		<span class="level3"></span>
+		<span class="level4"></span>
+	</div>
+</body>
+</html>

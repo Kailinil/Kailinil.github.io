@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>陈强义</title>
+	<link rel="stylesheet" type="text/css" href="css/myworks.css"/>
+	<link href="favicon.ico" rel="icon" type="image/x-icon" />
+	<script src="js/common.js"></script>
+	<script src="js/move.js"></script>
+	<script src="js/h5.js"></script>
+	<script src="js/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<!--header-->
+	<header>
+		<!--clock-->
+		<ul id="clock">
+			<li><img src="images/num.png"/></li>
+			<li><img src="images/num.png"/></li>
+			<li class="dotdot"></li>
+			<li><img src="images/num.png"/></li>
+			<li><img src="images/num.png"/></li>
+			<li class="dotdot"></li>
+			<li><img src="images/num.png"/></li>
+			<li><img src="images/num.png"/></li>
+		</ul>
+		<div class="nav"></div>
+		<div class="point">CSS3+HTML5</div>
+		<div class="hd-bot"></div>
+	</header>
+	
+	<!--content-->
+	<section class="content">
+		<div class="rotLeft rotTop pageBack"></div>
+		<div class="rotRight rotTop pageBack"></div>
+		
+		<!--mainpart-->
+		<div class="container page cn">
+			
+		<!--introduce nav-->
+			<section class="main-tit">
+				<h2 class="subtitle">CSS3+HTML5布局和简单js效果</h2>
+				<h2 class="subtitle">
+					<a href="index.html">首页</a>
+				</h2>
+				<h2 class="subtitle">
+					<a href="credit.html">联系我</a>
+				</h2>
+				<h2 class="subtitle">
+					<a href="websites/360kan/index.html">CSS & HTML作品页</a>
+				</h2>
+				<h2 class="subtitle">
+					<a href="myworks-js.html">javascript作品页</a>
+				</h2>
+				<h2 class="subtitle">
+					<a href="#app">手机端静态页</a>
+				</h2>
+				<div class="scissors"></div>
+				<div class="pageTitle">HTML5综合效果</div>
+				<blockquote><p>列出一些HTML5+CSS3综合例子，配合JS来实现更多的炫酷效果。</p></blockquote>
+			</section>
+			
+			<!--css-->
+			<section class="main-tit">
+				<div class="scissors"></div>
+				<div class="pageTitle">动态阴影效果</div>
+				<blockquote><p>通过感应鼠标与文字的距离来设置阴影参数</p></blockquote>
+				<span id="s1">
+					<div id="move-box"></div>
+					<h2 class="subtitle">sadfasdfasdfasdfasfd</h2>
+				</span>
+			</section>
+			
+			<!--图片切换-->
+			<!--<section class="main-tit">
+				<div class="scissors"></div>
+				<div class="pageTitle">各种切换效果</div>
+				<blockquote><p>包括5中绚丽的切换效果</p></blockquote>
+			</section>
+			
+			<section id="boom">
+				
+				<div id="boom-box">
+				</div>
+				<div id="boom-box2">
+				<button class=" ripple-button c-button" type="button">
+				  <div class="c-ripple js-ripple">
+				    <span class="c-ripple__circle"></span>
+				  </div>
+				  爆炸
+				</button>
+				<button class=" ripple-button c-button" type="button">
+				  <div class="c-ripple js-ripple">
+				    <span class="c-ripple__circle"></span>
+				  </div>
+				  翻转
+				</button>
+				<button class=" ripple-button c-button" type="button">
+				  <div class="c-ripple js-ripple">
+				    <span class="c-ripple__circle"></span>
+				  </div>
+				  翻页
+				</button>
+				<button class=" ripple-button c-button" type="button">
+				  <div class="c-ripple js-ripple">
+				    <span class="c-ripple__circle"></span>
+				  </div>
+				  立方体
+				</button>
+				<button class=" ripple-button c-button" type="button">
+				  <div class="c-ripple js-ripple">
+				    <span class="c-ripple__circle"></span>
+				  </div>
+				  扭曲
+				</button>
+					<input type="button" value="爆炸" class="boom"/>
+					<input type="button" value="翻转" class="flip"/>
+					<input type="button" value="翻页" class="turn"/>
+					<input type="button" value="立方体" class="cube"/>
+					<input type="button" value="扭曲" class="bar"/> 
+				</div>
+				
+			</section>-->
+			
+			
+			<!--3Dbox-->
+			<section class="main-tit">
+				<div class="scissors"></div>
+				<div class="pageTitle">3d盒子</div>
+				<blockquote><p>可自由拖动和方向键控制</p></blockquote>
+			</section>
+			
+			<section id="box3d">
+				<div class="box">
+			        <span class="front">前</span>
+			        <span class="back">后</span>
+			        <span class="left">左</span>
+			        <span class="right">右</span>
+			        <span class="top">上</span>
+			        <span class="bottom">下</span>
+			    </div>
+			</section>
+			
+			
+			<!--进度条-->
+			<section class="main-tit">
+				<div class="scissors"></div>
+				<div class="pageTitle">背景色渐变</div>
+				<blockquote><p>背景色渐变，利用animation实现无缝滚动</p></blockquote>
+			</section>
+			<section id="gra">
+				<div class="box">
+			        <span id="bar"></span>
+			    </div>
+			</section>
+			
+			
+			<!-- 图片切换 -->
+			<section class="main-tit">
+				<div class="scissors"></div>
+				<div class="pageTitle">HTML5头图切换效果</div>
+				<blockquote><p>主要运用了transition和transform,博客上有详解<a href="http://www.chenqiangyi.com/archives/62"></a></p></blockquote>
+			</section>
+			<section id="switch">
+				<button class="c-button" type="button">
+				  <div class="c-ripple js-ripple">
+				    <span class="c-ripple__circle"></span>
+				  </div>
+				  PREV
+				</button>
+				<button class="c-button" type="button">
+				  <div class="c-ripple js-ripple">
+				    <span class="c-ripple__circle"></span>
+				  </div>
+				  NEXT
+				</button>
+				<ul>
+					<li class="l2"><img src="images/switch/1.jpg" /></li>
+					<li class="l1"><img src="images/switch/2.jpg" /></li>
+					<li class="cur"><img src="images/switch/3.jpg" /></li>
+					<li class="r1"><img src="images/switch/4.jpg" /></li>
+					<li class="r2"><img src="images/switch/5.jpg" /></li>
+					<li><img src="images/switch/6.jpg" /></li>
+					<li><img src="images/switch/7.jpg" /></li>
+					<li><img src="images/switch/8.jpg" /></li>
+					<li><img src="images/switch/9.jpg" /></li>
+					<li><img src="images/switch/10.jpg" /></li>
+					<li><img src="images/switch/11.jpg" /></li>
+					<li><img src="images/switch/12.jpg" /></li>
+				</ul>
+			</section>
+			
+			
+			<!--倒影蒙板-->
+			<section class="main-tit">
+				<div class="scissors"></div>
+				<div class="pageTitle">倒影效果</div>
+				<blockquote><p>主要运用transform的scale和蒙版</p></blockquote>
+			</section>
+			<section id="shadow-bot">
+				<div>
+					<em></em>
+				</div>
+			</section>
+			
+			
+			<!-- 时钟 -->
+			<section class="main-tit">
+				<div class="scissors"></div>
+				<div class="pageTitle">模拟时钟</div>
+				<blockquote><p>纯样式无图片时钟，因为本页作品过多，加载进来损耗性能，故做了外链,另外在<a href="http://chenqiangyi.com/demo/cssClock.html">我的blog</a>上有详细介绍</p></blockquote>
+			</section>
+			<section id="divclock">
+				<a href="http://chenqiangyi.com/demo/cssClock.html" target="_blank">
+					<img src="images/showclock.png" />
+				</a>
+			</section>
+			
+			<!--扑克翻转-->
+			<section class="main-tit">
+				<div class="scissors"></div>
+				<div class="pageTitle">扑克牌翻转</div>
+				<blockquote><p>按住翻转，简单的3d效果</p></blockquote>
+			</section>
+			<section id="rotate">
+				<div class="front"><img src="images/front.jpg" height="413" width="277" /></div>
+				<div class="back"><img src="images/back.jpg" height="413" width="277" /></div>
+			</section>
+			
+			<!--3D图片环-->
+			<section class="main-tit">
+				<div class="scissors"></div>
+				<div class="pageTitle">3d圆环</div>
+				<blockquote><p>因为本页作品过多，加载进来损耗性能，故做了外链</p></blockquote>
+			</section>
+			<section id="divclock">
+				<a href="http://www.chenqiangyi.com/demo/3Dring/" target="_blank">
+					<img src="images/3Dring.png" />
+				</a>
+			</section>
+			
+			<!--canvas柱状图-->
+			<section class="main-tit">
+				<div class="scissors"></div>
+				<div class="pageTitle">canvas柱状图</div>
+				<blockquote><p>运用canvas标签创建如下数据的柱状图<br /> var arr = [67,321,287,34,150,210,400,340,rnd(0,401),rnd(0,401),rnd(0,401),rnd(0,401)]</p></blockquote>
+			</section>
+			<section id="can1">
+				<canvas id="c1" width="800" height="500"></canvas>
+			</section>
+			
+			<!--屏保-->
+			<section class="main-tit">
+				<div class="scissors"></div>
+				<div class="pageTitle">canvas 3D变幻线</div>
+				<blockquote><p>模拟window3D变幻线屏幕保护程序</p></blockquote>
+			</section>
+			<section id="can2">
+				<a href="http://www.chenqiangyi.com/demo/screenProtector.html" target="_blank">
+					<img src="images/sp.png" />
+				</a>
+			</section>
+			
+			<!--canvas画板-->
+			<section class="main-tit">
+				<div class="scissors"></div>
+				<div class="pageTitle">canvas 绘图板</div>
+				<blockquote><p>利用canvas标签做的绘图板</p></blockquote>
+			</section>
+			<section id="can3">
+				<canvas id="c3" width="600" height="400"></canvas>
+			</section>
+			
+			<!--移动端-->
+			<section class="main-tit">
+				<div class="scissors"></div>
+				<div class="pageTitle">两个简单的手机端网页</div>
+				<blockquote><p>上传两个手机端网页，用rem为单位制作,<a href="http://www.chenqiangyi.com/myworks/websites/juhuasuan/" target="_blank">点我访问聚划算</a>|或者<a href="http://www.chenqiangyi.com/myworks/websites/dangdang/" target="_blank">点我访问当当网</a>或手机扫描二维码访问</p></blockquote>
+			</section>
+			<section id="app" name="app">
+				<ul class="clearfix">
+					<li class="first"><img src="images/juhuasuan.png" /></li>
+					<li class="second"><img src="images/dangdang.png" /></li>
+				</ul>
+			</section>
+		</div>
+		<div class="rotLeft rotBottom pageBack"></div>
+		<div class="rotRight rotBottom pageBack"></div>
+		
+		<!--footer-nav-->
+		<div id="footer-nav">
+	        | <a href="#" class="toptop">Top</a> |
+	        <a href="credit.html">About Me</a> |
+	        <a href="mailto:chenqy1215@gmail.com" target="_blank">Email</a> |
+	        <a href="myworks-js.html">JS</a> |
+	        <a href="websites/360kan/index.html">CSS & HTML</a> |
+	        <a href="myworks-h5.html">CSS3 & HTML5</a> |
+	    </div>
+	    
+	    <div id="footer-follow">
+	        <a class="footer-follow-element footer-follow-google" href="https://plus.google.com/106568712575817992213" title="google" target="_blank" title="Follow me on Google Plus"></a>
+	        <a class="footer-follow-element footer-follow-github" href="https://github.com/ontheway1215/" target="_blank" title="Follow me on GitHub"></a>
+	        <a class="footer-follow-element footer-follow-weibo" href="http://weibo.com/3230197595/profile?topnav=1&wvr=6&is_all=1" target="_blank" title="Follow me on Sina Weibo"></a>
+	        <a class="footer-follow-element footer-follow-zhihu" href="https://www.zhihu.com/people/chen-yi-91-72" target="_blank" title="Follow me on zhihu"></a>
+	    </div>
+	</section>
+	
+	<!--footer-->
+	<footer>
+		<div id="footerImg"></div>
+	</footer>
+	<div id="scrollTop" >
+		<span class="level2"></span>
+		<span class="level3"></span>
+		<span class="level4"></span>
+	</div>
+</body>
+</html>

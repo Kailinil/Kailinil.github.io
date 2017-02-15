@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title>手机归属地查询</title>
+<style>
+*{ margin:0; padding:0; list-style:none; font-family: "微软雅黑","张海山锐线体简"}
+body{background: #ededed;}
+.container{max-width: 640px;margin: 30px auto;}
+.logo{width: 20%;height: 50px;float: left;}
+.logo img{width: 55px;height: 50px;}
+#QueryTel{width: 90.6%;margin: 0 auto;background: #fff;padding: 10px 0;overflow: hidden;border-radius: 10px;}
+#QueryTel #ipt1{width: 60%;height: 35px;box-sizing: border-box;padding-left: 11px;border-radius: 3px;border: 1px solid #ccc;}
+#QueryTel #btn1{width: 30%;height: 35px;float: right;border-radius: 5px;border: 1px solid #ccc;background: #59a6de;color: #fff;}
+.per_info{width: 100%;margin: 20px auto;padding: 5px 15px;box-sizing: border-box;max-width: 350px;}
+.logo_wrap{height: 50px;line-height: 50px;}
+.logo_wrap span{display: inline-block;}
+.logo_title{float: left;margin-left: 10%;font-size: 30px;color: #33d685;}
+dt{float: left;font-family: "微软雅黑";color: #616161;}
+dd{margin-left: 35%;}
+dd span{color: #59a6de;}
+#QueryTel p{padding: 5%;
+    /* background: lightpink; */
+    color: lightcoral;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-align: justify;
+    max-width: 350px;
+    margin: 0 auto;
+    }
+</style>
+<script src="js/jsonp.js"></script>
+<script>
+window.onload=function(){		
+	var oIpt=document.getElementById('ipt1');
+	var oBtn=document.getElementById('btn1');
+	oBtn.onclick=function(){
+		jsonp({
+			url:	'http://apis.juhe.cn/mobile/get',
+			data:	{phone:oIpt.value,dtype:'json',key:'16a2c18569e9a44c35023ba0b5ec2a57'},
+			cbKey:	"callback",
+			success:function(json){
+				var data=json.result;
+				writeDom(data);	
+				console.log(data)
+			},
+			error:function(){
+				alert('error');	
+			}	
+		});	
+		
+		function writeDom(data){
+			for(var key in data){
+				
+				var obj = document.getElementById(key);	
+				if(obj){
+					obj.innerHTML=data[key];
+				}
+			}
+		}
+		document.getElementById("Mobile").innerHTML=ipt1.value;
+	};
+};
+</script>
+</head>
+
+<body>
+<div class="container">
+	<div id="QueryTel">
+		<div class="per_info">
+			<div class="logo_wrap">
+				<span class="logo">
+					<a href="http://www.chenqiangyi.com"><img src="favicon.ico"/></a>
+				</span>
+				<span class="logo_title">生活小工具</span>
+			</div>
+			
+		</div>
+		<div class="per_info">
+			<input type="tel" id="ipt1" placeholder="请输入电话号码">
+			<input type="button" value="查询" id="btn1">
+		</div>
+		<div class="per_info">
+			<dt>所查号码:</dt><dd><span id="Mobile"></span><br></dd>
+		</div>
+		<div class="per_info">
+			<dt>归属省份:</dt><dd><span id="province"></span><br></dd>
+		</div>
+		<div class="per_info">
+			<dt>城市区号:</dt><dd><span id="areacode"></span><br></dd>
+		</div>
+		<div class="per_info">
+			<dt>城市邮编:</dt><dd><span id="zip"></span><br></dd>
+		</div>
+		<div class="per_info">
+			<dt>运 营 商:</dt><dd><span id="company"></span><br></dd>
+		</div>
+		<div class="per_info">
+			<dt>卡号段:</dt><dd><span id="card"></span><br></dd>
+		</div>
+		<p>*由于制作仓促，生活小工具部分暂时只有一个手机归属地查询，随后将增加天气查询，公交查询，火车票查询等利民工具，更有聊天机器人和手机控制电脑操作等功能。</p>
+	</div>
+</div>
+</body>
+</html>

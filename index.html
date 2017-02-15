@@ -1,98 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<style>
-		.clock{
-			width: 200px;
-			height: 200px;
-			border: 2px solid black;
-			border-radius: 50%;
-			margin: 40px auto;
-			position: relative;
-		}
-
-		.clock > div{
-			position: absolute;
-			transform-origin: bottom center;
-			border-top-left-radius: 100px;
-			border-top-right-radius: 100px;
-		}
-
-		.hour{
-			width: 6px;
-			height: 50px;
-			background-color: #029df9;
-			left: 97px;
-			top: 50px;
-		}
-
-		.minute{
-			width: 4px;
-			height: 60px;
-			background-color: #382a9d;
-			left: 98px;
-			top: 40px;
-		}
-
-		.second{
-			width: 2px;
-			height: 70px;
-			background-color: pink;
-			left: 99px;
-			top: 30px;
-		}
-
-		.cap{
-			width: 10px;
-			height: 10px;
-			left: 95px;
-			top: 95px;
-			border-radius: 50%;
-			background: silver;
-			position: absolute;
-		}
+	<title>李瑶</title>
+	<link rel="stylesheet" href="css/main.css" />
+	<link href="favicon.ico" rel="icon" type="image/x-icon" />
+	<script src="js/main.js"></script>
+	<style type="text/css">
+		/*header h1 span.word_active{
+			color:rgba(255,255,255,1);
+			text-shadow:0 0 0 #fff; 
+			opacity:1;*/
+}
 	</style>
 </head>
 <body>
-	 <div class="clock">
-	 	<div class="hour"></div>
-	 	<div class="minute"></div>
-	 	<div class="second"></div>
-	 	<section class="cap"></section>
-	 </div>
-	 <script>
-	 	var oHour = document.querySelector('.hour');
-	 	var oMinute = document.querySelector('.minute');
-	 	var oSecond = document.querySelector('.second');
-
-	 	setInterval(clock,16)
-
-	 	function clock(){
-	 		var date = new Date();
-
-	 		var hour = date.getHours()%12;
-	 		var minute = date.getMinutes();
-	 		var second = date.getSeconds();
-	 		var millinsecond = date.getMilliseconds();
-
-	 		oHour.style.transform = `rotate(${(hour+minute/60)/12*360}deg)`;
-	 		oMinute.style.transform = `rotate(${(minute+second/60)/60*360}deg)`;
-	 		oSecond.style.transform = `rotate(${(second+millinsecond/1000)/60*360}deg)`;
-	 	}
-
-	 	clock();
-	 </script>
+	<header>
+		<div class="nav-wrap clearfix">
+			<ul class="nav clearfix">
+				<li>
+					<a href="index.html">首页</a>
+					<span class="sub-bar"></span>
+				</li>
+				<li>
+					<a href="myworks-js.html">js作品</a>
+					<span class="sub-bar"></span>
+				</li>
+				<li>
+					<a href="websites/360kan/index.html">css作品</a>
+					<span class="sub-bar"></span>
+				</li>
+				<li>
+					<a href="myworks-h5.html">HTML5作品</a>
+					<span class="sub-bar"></span>
+				</li>
+				<li>
+					<a href="myworks-h5.html#app">手机端作品</a>
+					<span class="sub-bar"></span>
+				</li>
+				<li>
+					<a href="credit.html">联系我</a>
+					<span class="sub-bar"></span>
+				</li>
+			</ul>
+		</div>
+		<div class="face">
+			<img src="images/logo.png"/>
+		</div>
+		<h1 id="h_word"></h1>
+		<div class="me-btn left">
+			<a href="credit.html">转到个人信息页</a>
+			<span class="bar top"></span>
+			<span class="bar right"></span>
+			<span class="bar bottom"></span>
+			<span class="bar left"></span>
+		</div>
+		<div class="me-btn right">
+			<a href="myworks-js.html">转到个人作品页</a>
+			<span class="bar top"></span>
+			<span class="bar right"></span>
+			<span class="bar bottom"></span>
+			<span class="bar left"></span>
+		</div>
+	</header>
+	<section class="sim-show">
+		<h2 class="sim-title">技能与作品</h2>
+		<p class="sim-info">熟练JavaScript jQuery HTML/HTML5 CSS/CSS3</p>
+		<ul class="clearfix">
+			<li class="list">
+				<a href="javascript:;">
+					<img src="images/section_html.png"/>
+					<div class="opabox">
+						<h2>CSS & HTML</h2>
+						<p>1.理解w3c标准并熟练运用</p>
+						<p>2.精通HTML+CSS标准布局</p>
+						<p>3.能解决浏览器间的兼容问题</p>
+					</div>
+				</a>
+			</li>
+			<li class="list">
+				<a href="myworks-js.html">
+					<img src="images/section_js.png"/>
+					<div class="opabox">
+						<h2>JavaScript</h2>
+						<p>1.熟练掌握原生js、jQuery</p>
+						<p>2.熟练运用ajax、jsonp进行数据交互</p>
+						<p>3.熟练运用原生js封装函数</p>
+					</div>
+				</a>
+			</li>
+			<li class="list">
+				<a href="myworks-h5.html">
+					<img src="images/section_css.png"/>
+					<div class="opabox">
+						<h2>CSS3 & HTML5</h2>
+						<p>1.熟练掌握CSS3和H5的属性</p>
+						<p>2.熟练运用H5进行移动端构建</p>
+						<p>3.熟练运用CSS3和H5进行页面动画效果的展示</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</section>	
+	<section class="about-me">
+		<div class="shadow"></div>
+		<h2>About Me</h2>
+		<div class="me-box">
+			<ul>
+				<li>
+					<p>熟练掌握HTML5、CSS3、JavaScript开发</p>
+					<p>熟悉W3C标准与ES规范，熟悉Web语义化</p>
+					<p>熟练掌握盒模型、常用布局以及浏览器和移动设备兼容性</p>
+					<p>有相关网站构建和调试经验，良好的责任心和学习能力，新知识理解快，乐于分享</p>
+					<p>热爱coding</p>
+				</li>
+				<li>
+					<p>能用原生js进行复杂页面的开发</p>
+					<p>熟练运用原生js编写ajax和jsonp函数，进行普通交互和跨域交互</p>
+					<p>同时熟悉jQuery快速开发PC端也面以及运用zepto开发移动端页面</p>
+					<p>思路清晰，思维灵活，能根据不同情况运用不同方法</p>
+				</li>
+				<li>
+					<p>熟悉面向对象思想，能运用面向对象进行开发</p>
+					<p>熟悉HTML5的canvas、svg，能够运用canvas进行图标制作</p>
+					<p>了解MVC思想，了解angularjs的简单应用</p>
+					<p>了解一些PHP和Mysql数据库技术，对后台也抱有浓厚兴趣</p>
+				</li>
+			</ul>
+			<ol class="clearfix">
+				<li class="on"></li>
+				<li></li>
+				<li></li>
+			</ol>
+		</div>
+	</section>
+	<section class="contact-me">
+		<h2>PLEASE CONTACT ME</h2>
+		<h3>EMAIL:13891077852@163.com</h3>
+		<h3>TEL:13891077852</h3>
+		<h3>QQ:735576421</h3>
+	</section>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
